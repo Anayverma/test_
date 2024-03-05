@@ -10,12 +10,14 @@ export function GET(request, content) {
   ];
 
   const userdata = data.filter((_, index) => index + 1 == content.params.api);
-
-  console.log(data, userdata);
-
-  for (let i = 0; i < data.length; i++) {
-    console.log(data[i]);
-  }
-
+  for (let i = 0; i < data.length; i++) console.log(data[i]);
   return NextResponse.json(userdata, { status: 200 });
+}
+
+export async function POST(request, content) {
+  const data = await request.json();
+  // const { hi } = data;
+
+  console.log(data);
+  return NextResponse.json(data, { status: 202 });
 }

@@ -7,7 +7,7 @@ export default function Home() {
       {/* this is home route page */}
       <div>
         <p>hi</p>
-        <h1>hehehgfc</h1>
+        <h1>hehehgfcd</h1>
       </div>
     </main>
   );
